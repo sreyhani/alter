@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sajjad/fopProject/src/structs.h
+
+/home/sajjad/fopProject/src/view.c
+view.h
+/home/sajjad/fopProject/src/view.h
+structs.h
+/home/sajjad/fopProject/src/structs.h
+SDL2/SDL.h
+-
+SDL2/SDL2_gfxPrimitives.h
+-
+structs.h
+/home/sajjad/fopProject/src/structs.h
+math.h
+-
+
+/home/sajjad/fopProject/src/view.h
+SDL2/SDL.h
+-
+SDL2/SDL2_gfxPrimitives.h
+-
+structs.h
+/home/sajjad/fopProject/src/structs.h
+

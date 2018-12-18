@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/fopProject.dir/src/main.c.o CMakeFiles/fopProject.dir/src/simple_snake.c.o CMakeFiles/fopProject.dir/src/view.c.o  -o fopProject -lm -lSDL2 -lSDL2_gfx 
