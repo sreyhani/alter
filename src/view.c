@@ -23,7 +23,7 @@ void quit_window(){
 void set_background(){
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
 }
-void draw_tank(Tanks* tank){
+void draw_tank(Tank* tank){
     thickLineRGBA(renderer,tank->x+30*cos(-tank->angle),tank->y+30*sin(-tank->angle),tank->x,tank->y,5,255,0,0,255);
     filledCircleRGBA(renderer,tank->x,tank->y,20,255,0,0,255);
 }

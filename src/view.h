@@ -10,7 +10,7 @@
 void init_window();
 void quit_window();
 void set_background();
-void draw_tank(Tanks* tank);
+void draw_tank(Tank* tank);
 //how to make line 15 & 16 const int
 int  MAP_HEIGHT ;
 int MAP_WIDTH ;

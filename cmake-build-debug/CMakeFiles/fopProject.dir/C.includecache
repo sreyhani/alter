@@ -6,6 +6,38 @@
 
 #IncludeRegexTransform: 
 
+/home/sajjad/fopProject/src/main.c
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+math.h
+-
+SDL2/SDL.h
+-
+SDL2/SDL2_gfxPrimitives.h
+-
+view.h
+/home/sajjad/fopProject/src/view.h
+physics.h
+/home/sajjad/fopProject/src/physics.h
+structs.h
+/home/sajjad/fopProject/src/structs.h
+
+/home/sajjad/fopProject/src/physics.c
+physics.h
+/home/sajjad/fopProject/src/physics.h
+structs.h
+/home/sajjad/fopProject/src/structs.h
+view.h
+/home/sajjad/fopProject/src/view.h
+
+/home/sajjad/fopProject/src/physics.h
+structs.h
+/home/sajjad/fopProject/src/structs.h
+
 /home/sajjad/fopProject/src/structs.h
 
 /home/sajjad/fopProject/src/view.c

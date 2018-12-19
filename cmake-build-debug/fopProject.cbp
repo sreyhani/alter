@@ -83,6 +83,12 @@
 		<Unit filename="/home/sajjad/fopProject/src/main.c">
 			<Option target="fopProject"/>
 		</Unit>
+		<Unit filename="/home/sajjad/fopProject/src/physics.c">
+			<Option target="fopProject"/>
+		</Unit>
+		<Unit filename="/home/sajjad/fopProject/src/physics.h">
+			<Option target="fopProject"/>
+		</Unit>
 		<Unit filename="/home/sajjad/fopProject/src/simple_snake.c">
 			<Option target="fopProject"/>
 		</Unit>

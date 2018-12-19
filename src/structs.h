@@ -8,5 +8,5 @@ typedef struct {
     double x;
     double y;
     double angle;
-} Tanks;
+} Tank;
 #endif //FOPPROJECT_STRUCTS_H
