@@ -12,6 +12,7 @@ CMakeFiles/fopProject.dir/src/physics.c.o: ../src/structs.h
 CMakeFiles/fopProject.dir/src/physics.c.o: ../src/view.h
 
 
+CMakeFiles/fopProject.dir/src/view.c.o: ../src/physics.h
 CMakeFiles/fopProject.dir/src/view.c.o: ../src/structs.h
 CMakeFiles/fopProject.dir/src/view.c.o: ../src/view.c
 CMakeFiles/fopProject.dir/src/view.c.o: ../src/view.h

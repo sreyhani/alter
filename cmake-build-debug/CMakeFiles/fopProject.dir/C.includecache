@@ -33,6 +33,8 @@ structs.h
 /home/sajjad/fopProject/src/structs.h
 view.h
 /home/sajjad/fopProject/src/view.h
+math.h
+/home/sajjad/fopProject/src/math.h
 
 /home/sajjad/fopProject/src/physics.h
 structs.h
@@ -49,8 +51,8 @@ SDL2/SDL.h
 -
 SDL2/SDL2_gfxPrimitives.h
 -
-structs.h
-/home/sajjad/fopProject/src/structs.h
+physics.h
+/home/sajjad/fopProject/src/physics.h
 math.h
 -
 

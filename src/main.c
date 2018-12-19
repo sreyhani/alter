@@ -18,20 +18,21 @@ int main(){
     redtank->x=(rand() % 800);
     redtank->y=(rand() % 600);
     redtank->angle=P/2;
-    movment[0]=1;
-    movment[2]=1;
+//    movment[0]=1;
+//    movment[2]=1;
     while (1){
         set_background();
         SDL_RenderClear(renderer);
         draw_tank(redtank);
-
+        handle_events(movment);
+        move_tank(redtank,movment);
 
 
         SDL_RenderPresent(renderer);
 //        SDL_Delay(2000);
-        //SDL_Delay(1000/FPS);
-        quit_window();
-        break;
+        SDL_Delay(1000/FPS);
+//        quit_window();
+//        break;
         }
     return 0;
 }

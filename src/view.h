@@ -11,11 +11,13 @@ void init_window();
 void quit_window();
 void set_background();
 void draw_tank(Tank* tank);
+void handle_events(int mvment[]);
 //how to make line 15 & 16 const int
 int  MAP_HEIGHT ;
 int MAP_WIDTH ;
 SDL_Renderer *renderer;
 SDL_Window *window;
+SDL_Event event;
 
 
 
