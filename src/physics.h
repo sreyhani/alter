@@ -6,8 +6,9 @@
 #define FOPPROJECT_PHYSICS_H
 void move_tank(Tank* tank,int mvment[]);
 void fire(Tank* tank);
+void move_bullets(Tank* tank);
 
-int movment[4];//=={up,down,right,left}
+int events[6];//=={up,down,right,left,fire,exit}
 
 
 #endif //FOPPROJECT_PHYSICS_H

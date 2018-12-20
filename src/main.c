@@ -2,7 +2,6 @@
 // Created by sajjad on 17/12/18.
 //
 #include <stdio.h>
-#include <stdbool.h>
 #include <stdlib.h>
 #include "view.h"
 #include "physics.h"
@@ -11,30 +10,34 @@ const double FPS=30;
 const double P=3.14159265;
 void read_map_file(Map* map,char* filepath);
 int main(){
+
     Tank* redtank=malloc(sizeof(Tank));
     redtank->bullets=malloc(sizeof(Bullet)*5);
     Map* map=malloc(sizeof(Map));
     map->walls=malloc(sizeof(Wall)*100);
+
     read_map_file(map,"../src/maps/map2.txt");
-    printf("%d",map->walls[1].x2);
     init_window();
+
     redtank->x = rand() % 1024;
     redtank->y = rand() % 796;
     redtank->angle=P/2;
     redtank->remainingbullets=5;
-    EXIT=false;
-    while (!EXIT){
+    while (events[5]!=1){
         set_background();
         SDL_RenderClear(renderer);
         draw_walls(map);
         draw_tank(redtank);
-        handle_events(movment);
-        move_tank(redtank,movment);
+        handle_events(events);
+        move_tank(redtank,events);
+        fire(redtank);
+        draw_bullets(redtank);
+        move_bullets(redtank);
 
         SDL_RenderPresent(renderer);
         SDL_Delay(1000/FPS);
         }
-
+    quit_window();
     return 0;
 }
 void read_map_file(Map* map,char* filepath){
