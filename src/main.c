@@ -12,14 +12,16 @@ const double P=3.14159265;
 void read_map_file(Map* map,char* filepath);
 int main(){
     Tank* redtank=malloc(sizeof(Tank));
+    redtank->bullets=malloc(sizeof(Bullet)*5);
     Map* map=malloc(sizeof(Map));
     map->walls=malloc(sizeof(Wall)*100);
-    read_map_file(map,"../src/map3.txt");
+    read_map_file(map,"../src/maps/map2.txt");
     printf("%d",map->walls[1].x2);
     init_window();
     redtank->x = rand() % 1024;
     redtank->y = rand() % 796;
     redtank->angle=P/2;
+    redtank->remainingbullets=5;
     EXIT=false;
     while (!EXIT){
         set_background();
