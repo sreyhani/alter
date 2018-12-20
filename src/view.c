@@ -10,8 +10,8 @@
 #include <math.h>
 
 void init_window() {
-    MAP_HEIGHT=600;
-    MAP_WIDTH=800;
+    MAP_HEIGHT=796;
+    MAP_WIDTH=1024;
     SDL_Init(SDL_INIT_VIDEO);
     window= SDL_CreateWindow("AlterTank", 100, 100, MAP_WIDTH , MAP_HEIGHT, SDL_WINDOW_OPENGL);
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
@@ -29,8 +29,8 @@ void set_background(){
 }
 
 void draw_tank(Tank* tank){
-    thickLineRGBA(renderer,tank->x+30*cos(-tank->angle),tank->y+30*sin(-tank->angle),tank->x,tank->y,5,255,0,0,255);
-    filledCircleRGBA(renderer,tank->x,tank->y,20,255,0,0,255);
+    thickLineRGBA(renderer,tank->x+30*cos(-tank->angle),tank->y+30*sin(-tank->angle),tank->x,tank->y,5,0,255,0,255);
+    filledCircleRGBA(renderer,tank->x,tank->y,20,0,255,0,255);
 }
 
 void handle_events(int mvment[]) {
@@ -53,5 +53,10 @@ void handle_events(int mvment[]) {
                 break;
         }
 
+    }
+}
+void draw_walls(Map* map){
+    for (int i = 0; i < map->numberofwalls; i++) {
+        thickLineRGBA(renderer,map->walls[i].x1,map->walls[i].y1,map->walls[i].x2,map->walls[i].y2,5,255,0,0,255);
     }
 }

@@ -13,6 +13,7 @@ void quit_window();
 void set_background();
 void draw_tank(Tank* tank);
 void handle_events(int mvment[]);
+void draw_walls(Map* map);
 //how to make line 15 & 16 const int
 int  MAP_HEIGHT ;
 int MAP_WIDTH ;
