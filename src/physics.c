@@ -19,3 +19,11 @@ void move_tank(Tank* tank,int mvment[]){
     if(mvment[2]==1) (tank->angle)-=P2/36;
     if(mvment[3]==1) (tank->angle)+=P2/36;
 }
+void fire(Tank* tank){
+    if(tank->remainingbullets>0){
+        tank->bullets[5-tank->remainingbullets].x=tank->x;
+        tank->bullets[5-tank->remainingbullets].y=tank->y;
+        tank->bullets[5-tank->remainingbullets].angle=tank->angle;
+        tank->remainingbullets--;
+    }
+}

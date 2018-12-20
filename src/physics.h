@@ -5,6 +5,7 @@
 #ifndef FOPPROJECT_PHYSICS_H
 #define FOPPROJECT_PHYSICS_H
 void move_tank(Tank* tank,int mvment[]);
+void fire(Tank* tank);
 
 int movment[4];//=={up,down,right,left}
 
