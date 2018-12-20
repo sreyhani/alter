@@ -64,3 +64,8 @@ void draw_walls(Map* map){
     }
 
 }
+void draw_bullets(Tank* tank){
+    for (int i =0; i <5-tank->remainingbullets ; i++) {
+        filledCircleRGBA(renderer,tank->bullets[i].x,tank->bullets[i].y,10,0,0,0,255);
+    }
+}
