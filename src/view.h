@@ -4,6 +4,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL2_gfxPrimitives.h>
 #include "structs.h"
+#include <stdbool.h>
 #ifndef FOPPROJECT_VIEW_H
 #define FOPPROJECT_VIEW_H
 
@@ -15,6 +16,7 @@ void handle_events(int mvment[]);
 //how to make line 15 & 16 const int
 int  MAP_HEIGHT ;
 int MAP_WIDTH ;
+bool EXIT;
 SDL_Renderer *renderer;
 SDL_Window *window;
 SDL_Event event;

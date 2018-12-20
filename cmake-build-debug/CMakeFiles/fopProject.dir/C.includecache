@@ -13,12 +13,6 @@ stdbool.h
 -
 stdlib.h
 -
-math.h
--
-SDL2/SDL.h
--
-SDL2/SDL2_gfxPrimitives.h
--
 view.h
 /home/sajjad/fopProject/src/view.h
 physics.h
@@ -63,4 +57,6 @@ SDL2/SDL2_gfxPrimitives.h
 -
 structs.h
 /home/sajjad/fopProject/src/structs.h
+stdbool.h
+-
 

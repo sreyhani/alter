@@ -11,7 +11,10 @@ void move_tank(Tank* tank,int mvment[]){
     if(mvment[0]==1) {
         (tank->y)+=(4*sin(-tank->angle));
         (tank->x)+=(4*cos(-tank->angle));
-
+    }
+    if(mvment[1]==1) {
+        (tank->y)-=(4*sin(-tank->angle));
+        (tank->x)-=(4*cos(-tank->angle));
     }
     if(mvment[2]==1) (tank->angle)-=P2/36;
     if(mvment[3]==1) (tank->angle)+=P2/36;
