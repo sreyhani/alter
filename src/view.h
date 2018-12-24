@@ -4,6 +4,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL2_gfxPrimitives.h>
 #include "structs.h"
+#include "stdbool.h"
 #ifndef FOPPROJECT_VIEW_H
 #define FOPPROJECT_VIEW_H
 
@@ -11,7 +12,7 @@ void init_window();
 void quit_window();
 void set_background();
 void draw_tank(Tank* tank);
-void handle_events(int eventarr[]);
+void handle_events(bool eventarr[]);
 void draw_walls(Map* map);
 void draw_bullets(Tank* tank);
 //how to make line 15 & 16 const int

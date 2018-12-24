@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/sajjad/fopProject/src/logic.c">
+			<Option target="fopProject"/>
+		</Unit>
+		<Unit filename="/home/sajjad/fopProject/src/logic.h">
+			<Option target="fopProject"/>
+		</Unit>
 		<Unit filename="/home/sajjad/fopProject/src/main.c">
 			<Option target="fopProject"/>
 		</Unit>

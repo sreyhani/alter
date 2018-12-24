@@ -4,8 +4,6 @@
 
 #include "view.h"
 #include "structs.h"
-#include <SDL2/SDL.h>
-#include <SDL2/SDL2_gfxPrimitives.h>
 #include "physics.h"
 #include <math.h>
 
@@ -28,33 +26,33 @@ void set_background(){
 }
 
 void draw_tank(Tank* tank){
+    filledCircleRGBA(renderer,tank->x,tank->y,20,50,250,250,255);
     thickLineRGBA(renderer,tank->x+40*cos(-tank->angle),tank->y+40*sin(-tank->angle),tank->x,tank->y,5,0,255,0,255);
 
-    filledCircleRGBA(renderer,tank->x,tank->y,20,0,255,0,255);
 //    int a=15; //nesfe tol tank
 //    int b=10; //nesfe arz tank
 //    rectangleRGBA(renderer,tank->x+(a*cos(-tank->angle)+b*sin(-tank->angle)),tank->y+(a*sin(-tank->angle)+b*cos(-tank->angle)),tank->x-(a*cos(-tank->angle)+b*sin(-tank->angle)),tank->y-(a*sin(-tank->angle)+b*cos(-tank->angle)),0,255,0,255);
 }
 
-void handle_events(int eventarr[]) {
+void handle_events(bool eventarr[]) {
     while (SDL_PollEvent(&event)) {
         switch (event.type){
             case SDL_WINDOWEVENT:
-                if (event.window.event == SDL_WINDOWEVENT_CLOSE) eventarr[5]=1;
+                if (event.window.event == SDL_WINDOWEVENT_CLOSE) eventarr[5]=true;
                 break;
             case SDL_KEYDOWN:
-                if(event.key.keysym.sym == SDLK_UP) eventarr[0]=1;
-                if(event.key.keysym.sym == SDLK_DOWN) eventarr[1]=1;
-                if(event.key.keysym.sym == SDLK_RIGHT) eventarr[2]=1;
-                if(event.key.keysym.sym == SDLK_LEFT) eventarr[3]=1;
-                if(event.key.keysym.sym == SDLK_SPACE) eventarr[4]=1;
+                if(event.key.keysym.sym == SDLK_UP) eventarr[0]=true;
+                if(event.key.keysym.sym == SDLK_DOWN) eventarr[1]=true;
+                if(event.key.keysym.sym == SDLK_RIGHT) eventarr[2]=true;
+                if(event.key.keysym.sym == SDLK_LEFT) eventarr[3]=true;
+                if(event.key.keysym.sym == SDLK_SPACE) eventarr[4]=true;
                 break;
             case SDL_KEYUP:
-                if(event.key.keysym.sym == SDLK_UP) eventarr[0]=0;
-                if(event.key.keysym.sym == SDLK_DOWN) eventarr[1]=0;
-                if(event.key.keysym.sym == SDLK_RIGHT) eventarr[2]=0;
-                if(event.key.keysym.sym == SDLK_LEFT) eventarr[3]=0;
-                if(event.key.keysym.sym == SDLK_SPACE) eventarr[4]=0;
+                if(event.key.keysym.sym == SDLK_UP) eventarr[0]=false;
+                if(event.key.keysym.sym == SDLK_DOWN) eventarr[1]=false;
+                if(event.key.keysym.sym == SDLK_RIGHT) eventarr[2]=false;
+                if(event.key.keysym.sym == SDLK_LEFT) eventarr[3]=false;
+                if(event.key.keysym.sym == SDLK_SPACE) eventarr[4]=false;
 
                 break;
         }

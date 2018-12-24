@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/sajjad/fopProject/src/logic.c" "/home/sajjad/fopProject/cmake-build-debug/CMakeFiles/fopProject.dir/src/logic.c.o"
   "/home/sajjad/fopProject/src/main.c" "/home/sajjad/fopProject/cmake-build-debug/CMakeFiles/fopProject.dir/src/main.c.o"
   "/home/sajjad/fopProject/src/physics.c" "/home/sajjad/fopProject/cmake-build-debug/CMakeFiles/fopProject.dir/src/physics.c.o"
   "/home/sajjad/fopProject/src/simple_snake.c" "/home/sajjad/fopProject/cmake-build-debug/CMakeFiles/fopProject.dir/src/simple_snake.c.o"

@@ -6,6 +6,8 @@
 #include "view.h"
 #include "physics.h"
 #include "structs.h"
+#include "logic.h"
+
 const double FPS=30;
 const double P=3.14159265;
 void read_map_file(Map* map,char* filepath);
@@ -19,8 +21,8 @@ int main(){
     read_map_file(map,"../src/maps/map2.txt");
     init_window();
 
-    redtank->x = rand() % 1024;
-    redtank->y = rand() % 796;
+    redtank->x = 150;
+    redtank->y = 150;
     redtank->angle=P/2;
     redtank->remainingbullets=5;
     while (events[5]!=1){
@@ -30,6 +32,13 @@ int main(){
         draw_tank(redtank);
         handle_events(events);
         move_tank(redtank,events);
+        if(check_tank_collision(redtank,map)==true) {
+            bool moveback[4] = {events[1], events[0], false, false};
+            move_tank(redtank, moveback);
+            for (int i = 0; i <4 ; ++i) {
+                events[i]=false;
+            }
+        }
         fire(redtank);
         draw_bullets(redtank);
         move_bullets(redtank);

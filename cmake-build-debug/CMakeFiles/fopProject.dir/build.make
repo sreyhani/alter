@@ -57,9 +57,22 @@ include CMakeFiles/fopProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/fopProject.dir/flags.make
 
+CMakeFiles/fopProject.dir/src/logic.c.o: CMakeFiles/fopProject.dir/flags.make
+CMakeFiles/fopProject.dir/src/logic.c.o: ../src/logic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fopProject.dir/src/logic.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fopProject.dir/src/logic.c.o   -c /home/sajjad/fopProject/src/logic.c
+
+CMakeFiles/fopProject.dir/src/logic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fopProject.dir/src/logic.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sajjad/fopProject/src/logic.c > CMakeFiles/fopProject.dir/src/logic.c.i
+
+CMakeFiles/fopProject.dir/src/logic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fopProject.dir/src/logic.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sajjad/fopProject/src/logic.c -o CMakeFiles/fopProject.dir/src/logic.c.s
+
 CMakeFiles/fopProject.dir/src/main.c.o: CMakeFiles/fopProject.dir/flags.make
 CMakeFiles/fopProject.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fopProject.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fopProject.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fopProject.dir/src/main.c.o   -c /home/sajjad/fopProject/src/main.c
 
 CMakeFiles/fopProject.dir/src/main.c.i: cmake_force
@@ -72,7 +85,7 @@ CMakeFiles/fopProject.dir/src/main.c.s: cmake_force
 
 CMakeFiles/fopProject.dir/src/physics.c.o: CMakeFiles/fopProject.dir/flags.make
 CMakeFiles/fopProject.dir/src/physics.c.o: ../src/physics.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fopProject.dir/src/physics.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fopProject.dir/src/physics.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fopProject.dir/src/physics.c.o   -c /home/sajjad/fopProject/src/physics.c
 
 CMakeFiles/fopProject.dir/src/physics.c.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/fopProject.dir/src/physics.c.s: cmake_force
 
 CMakeFiles/fopProject.dir/src/simple_snake.c.o: CMakeFiles/fopProject.dir/flags.make
 CMakeFiles/fopProject.dir/src/simple_snake.c.o: ../src/simple_snake.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fopProject.dir/src/simple_snake.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fopProject.dir/src/simple_snake.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fopProject.dir/src/simple_snake.c.o   -c /home/sajjad/fopProject/src/simple_snake.c
 
 CMakeFiles/fopProject.dir/src/simple_snake.c.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/fopProject.dir/src/simple_snake.c.s: cmake_force
 
 CMakeFiles/fopProject.dir/src/view.c.o: CMakeFiles/fopProject.dir/flags.make
 CMakeFiles/fopProject.dir/src/view.c.o: ../src/view.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fopProject.dir/src/view.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fopProject.dir/src/view.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fopProject.dir/src/view.c.o   -c /home/sajjad/fopProject/src/view.c
 
 CMakeFiles/fopProject.dir/src/view.c.i: cmake_force
@@ -111,6 +124,7 @@ CMakeFiles/fopProject.dir/src/view.c.s: cmake_force
 
 # Object files for target fopProject
 fopProject_OBJECTS = \
+"CMakeFiles/fopProject.dir/src/logic.c.o" \
 "CMakeFiles/fopProject.dir/src/main.c.o" \
 "CMakeFiles/fopProject.dir/src/physics.c.o" \
 "CMakeFiles/fopProject.dir/src/simple_snake.c.o" \
@@ -119,13 +133,14 @@ fopProject_OBJECTS = \
 # External object files for target fopProject
 fopProject_EXTERNAL_OBJECTS =
 
+fopProject: CMakeFiles/fopProject.dir/src/logic.c.o
 fopProject: CMakeFiles/fopProject.dir/src/main.c.o
 fopProject: CMakeFiles/fopProject.dir/src/physics.c.o
 fopProject: CMakeFiles/fopProject.dir/src/simple_snake.c.o
 fopProject: CMakeFiles/fopProject.dir/src/view.c.o
 fopProject: CMakeFiles/fopProject.dir/build.make
 fopProject: CMakeFiles/fopProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable fopProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sajjad/fopProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable fopProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fopProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
